@@ -1,0 +1,771 @@
+﻿html {
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+}
+html, body, div{
+
+	display: block;
+	padding:0;
+	margin:0;
+} 
+
+.verticalLine {
+	padding:0px 10px;
+}
+img{
+	border: none;
+	margin:0px;
+}
+p,a,ol,ul{
+	font-size: 15px;
+	line-height: 17px;
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體";
+	color: #202020;
+	padding: 0 0 20px;
+	margin:0;
+
+}
+p{
+	color: #202020;
+	padding: 0 0 10px;
+	margin:0;
+
+}
+ol li, ul li{
+	
+	padding: 0 0 10px;
+}
+table td{
+	vertical-align: top;	
+	padding:0 2px 0 0;
+}
+
+hr.invisbleSeparator{
+	clear: both;
+	height: 1px;
+	border:none;
+	
+}
+
+.noUnderline{
+	text-decoration: none;
+}
+strong{
+	font-weight: bold;
+	color: #3a9b86;
+	font-size: 16px;
+}
+hr{
+	border: none;
+	background: url(img/blue-line.png) no-repeat;
+	height: 2px;
+	padding: 0 0 5px 0;
+	margin: 0 0  0 ;
+}
+
+hr.articleSp{
+	
+	background: url(img/footer-line.jpg) repeat-x ;	
+	height:20px;
+}
+
+hr.clearBoth{
+	border: none;
+	height: 1;
+	padding: 0;
+	margin: 0px;
+	clear:both;
+	background:none;
+
+}
+h1{
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體";
+	font-size:24px;
+	color:#af5638;
+	padding: 0;
+	margin:10px 0px 10px 0px;
+	font-weight: bold;
+	line-height:26px;
+}
+
+.contenth1{
+	text-align: center;
+	margin-top: 60px;
+	background: url(img/h1-bg.png) no-repeat center;
+}
+
+h2{
+	
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體";
+	font-size: 18px;
+	line-height: 13px;
+	color: #000;
+	padding:0px 0px;
+	margin:0px 0px 10px 0px;
+	display: block;
+	font-weight: bold;
+}
+
+h2 small{
+	
+	font-size: 14px;
+	line-height: 13px;
+	color: #000;
+	letter-spacing: -1px
+
+}
+
+h3{
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體";
+	font-size: 16px;
+	color:#3a9b86;
+
+	margin:20px 0 0 0;
+	display: block;
+
+}
+
+ul,ol{
+
+	padding: 0 20px;
+	margin: 0;
+	
+}
+
+ul{
+	list-style:url(img/list-bullet.png);
+	padding: 0 15px;
+}
+
+
+ol{
+	list-style: decimal;
+	padding: 10px 20px 10px 30px;
+}
+a.moreLink{
+	color: #FFFFFF;
+	display: block;
+	padding:5px 50px 5px 5px;
+	float: right;
+	text-decoration: none;
+	
+}
+body{
+	width: 100%;
+	margin:0px;
+	
+	background: url(img/bg-page.gif) repeat;
+	
+
+}
+.wrapper{
+	background: url(img/bg-wrapper.gif) repeat-x;
+	width: 100%;
+}
+
+.notice-popup{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(90, 90, 90, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#engTitle, #chiTitle{
+	color:black;
+	text-align:center;
+	font-size:28px;
+	margin: 25px 0;
+}
+#engText, #chiText{
+	color:black;
+	font-size:17px;
+	line-height: 30px;
+}
+
+#popdiv {
+  height: 320px;
+  width: 900px;
+  background-color: #ffffff;
+   align-items: center;
+  justify-content: center;
+  padding:20px 30px;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(50%);
+}
+.container{
+	width: 900px;
+	margin: 0 auto 30px auto;
+	padding: 0 30px;
+}
+
+#header{
+	background: url(img/header.jpg) repeat-x;
+	height: 145px;
+	margin-bottom:10px;
+	
+}
+#header #logo{
+	width:	375px;
+	margin: 0px auto;
+	padding:20px;
+	display: block;	
+}
+
+#header .nav{
+	display: inline-flex;
+	list-style: none;
+	margin:  10px 45px;
+	white-space:nowrap;
+	
+}
+#header .nav li{
+	float: left;
+}
+
+#header .nav a{
+	padding: 10px 40px;
+	text-decoration: none;
+	font-size: 16px;	
+	border-left:1px solid #603813;
+	color: #333333;
+	
+}
+#header .nav li.current a{
+	background:url(img/cream_pixels.png) repeat;
+	color: #FFFFFF;	
+}
+#header .nav li:first-child a{
+		border:none;	
+}
+
+.textSection{
+	/*padding: 30px 0px;
+	width: 500px;*/
+}
+
+.rightSideBlock{
+	/*width: 300px;*/
+	float: right;
+	padding: 40px 0px;
+}
+
+.rightSideBlock .block{
+	padding:0 20px;
+}
+.rightSideBlock .block .wrapper{
+	padding:20px 0;
+	/*border-bottom:1px solid #AA9A57;*/
+}
+
+/*login*/
+#loginList{
+	background:#cab78d;
+}
+#loginList.textSection{
+	padding:30px 20px 30px 40px;
+}
+.loginForm{
+	padding:10px 80px;
+}
+.loginForm p label{
+color: #fff;
+    float: left;
+    width: 110px;
+    font-size: 16px;
+}
+.loginForm #loginBtn{
+	color: #fff;
+    background: #7a572d;
+    padding: 5px 40px;
+    border: none;
+    font-size: 16px;
+    margin-left: 113px;
+}
+
+.displayMap{
+    background: url(img/list/network.png) no-repeat;
+    width: 900px;
+    height: 650px;	
+}
+
+.displayMap-services{
+    background: url(img/list/network.png) no-repeat;
+    width: 900px;
+	height: 650px;
+	margin-left:-60px;
+}
+.distictTable{
+	background: url(img/border.jpg) repeat-y right;
+    border-collapse: collapse;
+    margin: 0 0 0 50px;
+	width:100%;
+}
+.distictTable td{
+	border-top: 1px solid #b19063;
+    border-bottom: 1px solid #b19063;
+    background: url(img/border.jpg) repeat-y;
+    padding: 10px 50px;
+}
+.distictTable .distict1{
+	background:url(img/border.jpg) repeat-y #dae0f0;
+}
+.distictTable .distict2{background:url(img/border.jpg) repeat-y #f8e2d6;}
+.distictTable .distict3{background:url(img/border.jpg) repeat-y #f0efed;}
+.distictTable .spacing{width: 7px; padding: 0;}
+.place{
+    position: absolute;
+	padding: 0;
+	z-index:0;
+}
+.place span{
+	position: absolute;
+    text-align: center;	
+}
+.place .no{
+	color: #fff;
+    width: 100%;
+    padding: 5px 0;
+}	
+.place span.location{
+    width: 100px;
+    margin-left: -35px;
+    white-space: nowrap;
+    margin-top: -20px;
+	z-index:10;
+}
+/*Slider*/
+.slide-banner img {
+	position: absolute;
+    z-index: 2;
+}
+#banner .pager{
+	position: absolute;
+    margin: 60px 0 0 600px;
+    z-index: 5;
+    width: 300px;	
+}
+#banner .pager ul.navigation{
+	margin:180px 0px 10px 90px;
+}
+#banner .pager ul.navigation li{
+	float:left;
+	list-style:none;
+}
+#banner .pager ul.navigation li a{
+    display: block;
+    width: 23px;
+    height: 20px;
+    text-indent: -999px;
+    background: url(img/banner-btn.png) no-repeat;
+    overflow: hidden;
+    padding: 0;	
+}
+#banner .pager ul.navigation li.active a{
+	    background: url(img/banner-btn.png) no-repeat 0px -22px;
+}
+#loginB{
+	/*background: url(img/block-bg.jpg) no-repeat;*/
+}
+
+#findClinicB{
+	background: url(img/block-bg3.jpg) no-repeat;
+	
+}
+#findClinicB .wrapper{
+	background: url(img/network-bg.jpg) no-repeat;
+	
+}
+#findClinicB select{
+	width: 240px;
+	padding:5px;
+}
+
+#findClinicB #submit{
+	background: url(img/search-go.jpg) no-repeat;
+	color:#FFFFFF;
+	width:237px;
+	height:33px;
+	border:none;
+	margin: 10px 0;
+	padding: 0px 20px;
+	text-align: left;
+}
+
+
+#newUpdateB{
+	background: url(img/block-bg2.jpg) no-repeat;
+	border-bottom:none;
+	padding-top:0px;
+}
+#newUpdateB .wrapper{
+
+	border-bottom:none;
+	padding-top:0px;
+} 
+#newUpdateB h2{
+
+	padding-top:20px;
+}
+
+#newUpdateB .pager{
+	float: right;
+}
+
+#newUpdateB .pager li{
+	float: left;
+	list-style: none;
+	padding:0px;
+}
+#newUpdateB .pager li a{
+	display: block;
+	padding:5px 5px;
+	margin:0 1px 0 0px;
+	background: #aa9a57;
+	color:#745225;
+	font-weight: bold;
+	text-decoration: none;
+	
+}
+
+#newUpdateB .newsItem{
+	clear: both
+}
+#newUpdateB .newsItem a{
+	font-size: 12px;
+	line-height:14px;
+	display: block;
+	padding:10px 5px;
+	text-decoration: none;
+}
+
+#newUpdateB .newsItem a span{
+	color: #0d5186;
+}
+#newUpdateB .newsItem img{
+	float: left;
+	padding: 0 5px 5px 0;
+}
+#newUpdateB .newsItem img{
+	float: left;
+}
+#footer{
+	padding: 30px 40px;
+	background: url(img/footer.jpg) repeat-x;
+	clear: both;
+	display:grid;
+}
+#footer ul{
+	list-style:none;
+	width:100%;
+	padding:0;
+	display: flex;
+    justify-content: center;
+}
+#footer ul li{
+	float:left;
+	background:url(img/star.jpg) no-repeat;
+	
+}
+#footer ul li:first-child{
+	
+	background:none;
+	
+}
+
+#footer ul li a{
+	 font-size:13px;
+	color:#000000;
+	display:block;
+	padding: 2px 0px 2px 12px;
+	text-decoration:  none;
+}
+
+#footer p{
+	display: block;
+	clear:both;	
+	border-top:1px solid #cac9c9;
+	padding: 15px 40px;
+}
+
+.footerTagList{
+	float:left;
+	padding:15px 20px;
+	border-top:1px solid #cac9c9;
+	background:none;
+	list-style:none;
+	display:flex;
+	justify-content:center;
+}
+.footerTagList li{
+	float:left;
+	background:none;
+}
+.footerTagList li a{
+	float:left;
+	background:none;
+	text-decoration:  none;
+}
+.leftSideBlock{
+	/*display:flex;*/
+	padding-bottom: 10px;
+	margin-top:10px;
+}
+#bannerWithList{
+	width: 100%;
+    height: 300px;
+}
+
+#bannerWithList .tag-board{
+    display: flex;
+    float: right;
+    height: 300px;
+	width: 330px;
+	align-items: center;
+}
+#bannerWithList .tag-board ul{
+    list-style: none;
+	text-align:center;
+	margin: 0 auto;
+}
+#bannerWithList .tag-board ul li{
+	padding: 8px 30px;
+}
+
+#bannerWithList .tag-board ul li a{
+	color:#ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0px;
+}
+#homePage{
+	padding:10px 30px;
+}
+#homePage h1{
+	margin:10px 0;
+}
+#homePage p{
+	padding:0px;
+}
+#about-us-pageBackground{
+	background-color: #f5f0ec;
+	margin:10px 0px;
+	padding:10px;
+}
+#our-services-pageBackground{
+	background-color: #f5f0ec;
+	margin:10px 0px;
+	padding:10px;
+}
+.page-card{
+	width: 100%;
+    display: flex;
+}
+.page-card-left{
+	float: left;
+    text-align: left;
+    width: 40%;
+    margin:40px 20px 40px 50px;
+}
+.page-card-left h2{
+	margin: 0px;
+    font-size: 24px;
+	color:#7e5734;
+	line-height:30px;
+}
+.page-card-right{
+	float: right;
+    align-self: center;
+    padding:30px 35px 15px 20px;
+    width: 60%;
+    border-left: 1px solid white;
+}
+.page-card-right p{
+	line-height: 18px;
+}
+.page-card-full{
+	margin:40px 20px 40px 50px;
+}
+.page-card-full h1{
+	padding:0px;
+}
+
+.urineExaminations{
+	padding:0px;
+	line-height: 17px;
+    font-size: 14px;
+}
+.urineExaminations li{
+	list-style: none;
+	padding:2px;
+}
+li label{
+	color: #976131;
+	font-weight:bold;
+}
+.nursing-services-list-content{
+	margin:15px;
+}
+.nursing-services-list-content li{
+	padding:0 0 5px;
+}
+.nursing-services-list{
+	list-style: none;
+    counter-reset: number;
+}
+.nursing-services-list-ol{
+   counter-increment: number;
+   margin-bottom: 5px;	
+}
+.nursing-services-list-ol::before{
+   margin-right: 10px;
+   content: counter(number)"\002E";
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;	
+	color: #976131;
+	font-weight:bold;
+}
+.list-no-list-style{
+	list-style:none;
+}
+.list-no-list-style-content{
+	padding: 15px;
+}
+.list-no-list-style-content li{
+	padding:0 0 5px;
+}
+
+#table {
+    table-layout:fixed;
+    width: 100%;
+    text-align: left;
+    border-collapse:collapse;
+	border:1px solid #f5f0ec;
+	margin: 10px 0;
+	background-color:transparent;
+}
+#table th {
+    border-bottom: solid 1px black;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+#table td {
+    padding-top: 3px;
+    padding-bottom: 4px;
+	vertical-align: middle;
+}
+#table tr{
+	border-bottom: 1px solid #CCC;
+	padding: 0px 5px;
+}
+#table tr.no-border-row {
+    border-bottom: none;
+}
+.th-age{
+	width:40%;
+}
+.no-border-td{
+	border-bottom: 1px solid #CCC;
+}
+.banner-aboutUsFrontPage{
+	background:url(img/banner-f-3.jpg) round;	
+}
+.banner-healthCheck{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-corporatePackage{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-nursingService{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-healthSeminar{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-vaccinations{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-callCentreService{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-ourMedicalNetwork{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-outPatientDayCaseSurgeries{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-geographicCoverage{
+	background:url(img/banner-f-3.jpg) round;
+}
+.banner-thirdPartyAdministration{
+	background:url(img/banner-f-3.jpg) round;
+}
+.contact-box{
+	margin:20px;
+}
+.contact-box-content{
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+	background-color: #986232;
+}
+.contact-box-content p{
+	color:#ffffff;
+	padding:20px 50px;
+}
+.header-tag{
+	text-align: center;
+}
+h1.subTitle{
+	font-size: 16px;
+}
+.addressTitle{
+	font-weight:bold;
+}
+.bold-word{
+	font-weight: bold;
+}
+.paragraph-line{
+	border-top:2px solid #af5638;
+	margin-bottom: 5px;
+}
+.coming-soon{
+    height: 350px;
+    /* width: 100%; */
+    background: url(img/footer.jpg) repeat;
+    margin: 10px;
+    display: flex;
+}
+.coming-soon h1{
+	margin:0 auto;
+	align-self:center;
+	font-size:48px;
+}
+#about-us-frontPage{
+	padding:20px;
+	background: url(img/footer.jpg) repeat-x;
+}
+.contact-table{
+	width:50%;
+	font-family: Arial, Helvetica, sans-serif, "微軟正黑體", "新細明體";
+	font-size:15px;
+}
+.contact-table thead{
+	text-align:left;
+}
+.contact-table thead tr th{
+	text-decoration: underline;
+	font-weight:normal;
+}
+.contact-table tbody .no-border-row .no-border-td{
+	width: 40%;
+    border-bottom: 0px;
+}
+.textSection{
+    margin: 20px 0px 0px;
+}
